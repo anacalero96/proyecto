@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Chip</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- <link rel="shortcut icon" href="./img/base_logo_mobile.png" type="image/x-icon"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar" style="background-color: #ffff;">
+            <div class="container"><a class="navbar-brand" href="#"><img src="../img/logo ana texto2.png" alt="" width="180px"></a></div>
+        </nav>
+        <nav class="navbar navbar-expand-lg" style="background-color: #002e5d; font-size: 16px;">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="./home.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <!--Muestra el contenido de interes para el usuario-->
+                                Info
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 16px;">
+                                <li><a class="dropdown-item" href="./cime.html">Centro de Acogida Animales Maó (CIME)</a></li>
+                                <!--Playas donde puedes llevar a tu perro a pasear-->
+                                <li><a class="dropdown-item" href="./playas.html">Playas</a></li>
+                                <!--Información de como verificar el chip de tu mascota-->
+                                <li><a class="dropdown-item" href="./verificar_chip.html">Verifica microchip</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <!--Muestra las opciones que tienes para adoptar-->
+                                Adopta
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 16px;">
+                                <!--Muestra los animales (gatos/perros) que hay disponibles en la perrera-->
+                                <li><a class="dropdown-item" href="./cime_animales.html">Centro de Acogida Animales Maó (CIME)</a></li>
+                                <!--Muestra los animales (gatos/perros) que están disponibles en la protectora-->
+                                <li><a class="dropdown-item" href="./protectora_animales.html">Protectora de Animales Maó</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <!--Muestra las opciones que tienes para colaborar con la protectora-->
+                                Colabora
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 16px;">
+                                <!--Mostrará la información de como hacerte socio-->
+                                <li><a class="dropdown-item" href="./hacertesocio.html">Hazte socio</a></li>
+                                <!--Muestra como hacer donativos y tipos-->
+                                <li><a class="dropdown-item" href="./donativos.html">Donativos</a></li>
+                                <!--Muestra como hacerte voluntario y que tipos-->
+                                <li><a class="dropdown-item" href="./voluntarios.html">Voluntarios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <!--Muestra que hacer en los siguientes casos: -->
+                            <a class="nav-link active text-light" aria-current="page" href="#">¿Qué hago si...?</a>
+                        </li>
+                        <li class="nav-item">
+                            <!--Mostrará formulario de contacto o información sobre los contactos disponibles-->
+                            <a class="nav-link text-light disabled" href="./contactar.html">Contacta</a>
+                        </li>
+                        <li class="nav-item">
+                            <!--Blog de la protectora-->
+                            <a class="nav-link text-light disabled" href="#">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <!--Horario de apertura al público-->
+                            <!--Información relevante-->
+                            <a class="nav-link text-light disabled" href="#">Nuestro Local</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Contenido de que hacer en caso de las siguientes condiciones: He atropellado o encontrado un herido, crías de gato, he visto a un abandonado
+    tengo costancia de un maltrato, Quiero ceder a mi perro/gato en adopción-->
+    <main class="my-3">         
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div>
+                        <div class="row c-div-info" type="button" data-bs-toggle="collapse" data-bs-target="#info1" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="bi bi-plus-lg col-1 mt-3"></i>
+                            <p class="col-11 mt-3">He atropellado o encontrado un herido</p>
+                        </div>
+                        <div class="collapse mt-3" id="info1">
+                            <p>Llamar a la policía local del municipio donde se encuentra el perro o gato herido, ellos avisarán al lacero, que debe venir a recogerlo. Contactar con la Protectora a través de WhatsApp o Facebook, pero al ser voluntarios debes entender que no estamos localizables las 24h del día.</p>
+                            <p>Si puedes cogerlo y llevarlo a un veterinario, tendrá más posibilidades de salvar su vida. Pero siempre avisando a la policía. El ayuntamiento de Mahón dispone de un protocolo de socorro a gatos y perros heridos, por ello, es necesario que tomes una foto del lugar que demuestre que el animal se encontraba en el termino de Mahón.</p>
+                            <!--Mensaje de advertencia-->
+                            <p class="c-dg-info">Importante: la persona que atropella a un animal de forma accidental, no es culpable, ni tiene la obligación de pagar los gastos veterinarios, en cambio, sí tiene la obligación de socorrerlo, no dejándolo agonizar solo y abandonado.</p>
+                        </div>
+                    </div>
+                    <!--Información de que hacer si te encuentras crías de gatos-->
+                    <div>
+                        <div class="row c-div-info mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#info2" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="bi bi-plus-lg col-1 mt-3"></i>
+                            <p class="col-11 mt-3">He encontrado crías de gato</p>
+                        </div>
+                        <div class="collapse mt-3" id="info2">
+                            <p class="c-dg-info">NO TOCARLOS</p>
+                            <p>Nuestro olor hará que su madre los rechace</p>
+                            <p class="c-dg-info">SI SE LES VE EN ACEPTABLE ESTADO</p>
+                            <p>Quizás su madre los esté reubicando, quizás te ve y te oye no los alimentará hasta que no te vayas, no vale esconderse ella os detectará. 
+                                Déjalos y vete, regresa en 2 horas, si siguen ahí entonces sí ayúdales, utiliza una tela para evitar dejar tu olor en ellos.
+                            </p>
+                            <p>Cuidar un bebé hasta 1 mes y medio no es tarea fácil, por ello hay que darle la oportunidad a la madre.</p>
+                            <p>Cogerlo no siempre es la mejor opción, necesitan biberón con leche formulada para gatitos, aún así tomando biberón se atragantan provocando broco-aspiración y fallecen.</p>
+                            <p style="color: #002e5d; font-weight: bold;">CONSULTA CON UN VETERINARIO QUE ALIMENTO DEBES DARLE, NOSOTROS SIEMPRE LES PROPORCIONAMOS ALIMENTO ADAPTADO.</p>
+                            <p>A la delicada alimentación con biberón se suma la estimulación, o saben hacer sus necesidades solos, se les tiene que estimular. Para que sobrevivan cada dos horas deben ser alimentados y estimulados, 
+                                si son más de uno obviamente se multiplica el tiempo que se les debe dedicar en cada toma.</p>
+                            <p style="text-decoration: underline; color: #002e5d; font-weight: bold;">ANTES DEL MES DE VIDA ES COMPLICADO SI NO ESTÁN CON SU MAMI</p>
+                            <!--Video informativo-->
+                            <p>PARA MÁS INFORMACIÓN VISITA EL SIGUIENTE <a href="https://www.youtube.com/watch?v=f3NrUvd-lWM">LINK</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row c-div-info mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#info3" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="bi bi-plus-lg col-1 mt-3"></i>
+                            <p class="col-11 mt-3">He encontrado o visto a un abandonado</p>
+                        </div>
+                        <div class="collapse mt-3" id="info3">
+                            <p>Llamar a la policía local del municipio donde se encuentra el perro o gato, para que el lacero pueda llevarlo a la perrera y su propietario pueda recuperarlo.</p>
+                            <p>Si decides cogerlo, debes asegurarte que no se te escapará, puesto que perderse en un lugar desconocido será mucho peor, debes llevarlo a un veterinario o perrera para que puedan localizar al propietario mediante la lectura de su chip.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row c-div-info mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#info4" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="bi bi-plus-lg col-1 mt-3"></i>
+                            <p class="col-11 mt-3">Tengo constancia de un maltrato</p>
+                        </div>
+                        <div class="collapse mt-3" id="info4">
+                            <p>¿Qué es maltrato? cualquier acto de violencia, condiciones  higiénico-sanitarias deficientes y el abandono.</p>
+                            <ul>
+                                <li>Falta de cuidado, agua, comida, cobijo, instalaciones inadecuadas.</li>
+                                <li>Tenerlo encerrado siempre, sin paseos o acceso al exterior.</li>
+                                <li>Tenerlo la mayor parte del día en un balcón.</li>
+                                <li>Tenerlo siempre atado.</li>
+                                <li>Falta de asistencia veterinaria si el animal está herido o enfermo.</li>
+                                <li>Malos tratos físicos, golpes, vejaciones, peleas organizadas.</li>
+                                <li>Abandono.</li>
+                            </ul>
+                            <p> Acudir o llamar a la Policía local o al Juzgado y cursar la denuncia anónima con el máximo de datos posibles incluyendo fotos y vídeos (grabar un periódico de ese día). 
+                                Si el maltrato es continuado, se deben filmar varios días para demostrarlo mejor.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row c-div-info mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#info5" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="bi bi-plus-lg col-1 mt-3"></i>
+                            <p class="col-11 mt-3">Quiero ceder a mi perro/gato en adopción</p>
+                        </div>
+                        <div class="collapse mt-3" id="info5">
+                            <p>Si quieres entregar a tu mascota en adopción, puedes entregarlo en un Centro de Acogida (perrera) de la isla, los hay en Mahón y Ciudadela. También puedes contactar con la Protectora de Animales Mahón, que en la medida de lo posible intentará ayudarte en su adopción, aunque al no disponer de ningún refugio sólo podemos atender algunos casos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3"> 
+                    <!--contiene carousel--> 
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <!--Muestra imagenes que hacen referencia a los textos-->
+                          <div class="card">
+                              <img src="../img/gato blanco.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <p class="card-text">Nieve</p>
+                                <p>Gato de raza persa, es un gato muy mimoso y confiado que disfruta mucho de las visitas.</p>
+                              </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </main>
+    <footer style="background-color: #002e5d; font-size: 16px; position: sticky; bottom: 0; width: 100%;">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                <p class="col-md-4 mb-0 text-light">© 2024 protectoraanimals.com</p>
+                <ul class="nav col-md-4 justify-content-end">
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Inicio</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Info</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Adopta</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Colabora</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-light">¿Qué hago si...?</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Contacta</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Noticias</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Nuestro Local</a></li>
+                </ul>
+            </div>
+            <!--Introducir redes sociales de la protectora-->
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- <script src="./js/script.js"></script> -->
+</body>
+</html>

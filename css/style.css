@@ -1,0 +1,73 @@
+/*DISEÑO DE LA PÁGINA WEB*/
+
+/* Color verde: bdd87e*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Roboto Condensed", sans-serif;
+}
+.f-text{
+    font-family: "Roboto Condensed", sans-serif;
+}
+#button-addon2 {
+    background-color: #ffff;
+}
+#btn-help{
+    background-color: #002e5d;
+}
+/*Titulos*/
+.titulo {
+    color:#000000;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-weight: bold;
+    text-align: center;
+}
+/*CARD*/
+.card{
+    width: 100%;
+}
+.card-mnc{
+    width: 45%;
+    /* margin-bottom: 10px; */
+}
+.caja-img{
+    width: 100%;
+}
+.card-text{
+    font-size: 16px;
+}
+/*Menú*/
+.dropdown-item:hover {
+    background-color:#002e5d;
+    color: aliceblue;
+    opacity: 0.8;
+}
+.c-div-info {
+    background-color: #002e5d;
+    opacity: 0.8;
+    color: white;
+}
+.c-dg-info{
+   color:#9e0b0b;
+   font-weight: bold;
+}
+/*Hace referencia al titulo de verificar microchip*/
+.card-title{
+    margin-top:10px;
+}
+
+.c-animal {
+    height: 380px;
+}
+
+.btn_adopta{
+    background-color: #bdd87e;
+    color:black;
+}
+.btn_adopta:hover{
+    background-color: #bdd87e;
+}
+.card_logo{
+   width: 50%;
+   height: 50%;
+}
