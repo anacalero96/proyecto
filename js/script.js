@@ -17,14 +17,13 @@ $(document).ready(function(){
     //     }, 500);
     // });
 
-    $(".card-body").click(function(){
-        $(".table").collapse('toggle');
-        if ($("#info1").text() === "Expandir tarjeta") {
-            $("#info1").text("Contraer tarjeta");
-            console.log("funciona");
+    $('.card_out').on('click','touchstart', function () {
+        var tabla = $("#info1");
+        if ($("#info1").is(':visible')) {
+            console.log("puta mierda");
+            tabla.hide()
         } else {
-            $("#info1").text("Expandir tarjeta");
-            console.log("sigue alucinando");
-        }
-    });
+            $(tabla).show();
+        } 
+    })
 });
