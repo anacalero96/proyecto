@@ -2,11 +2,11 @@
 /*Cuando no esta el carousel el footer se sube hacia arriba, de esta manera se adapta al contenido del body*/ 
 $(document).ready(function(){
     $(".c-div-info").on("click", function() {
-        $("footer").css ({
-            "position": "fixed",
-            "bottom": "0"
+        // $("footer").css ({
+        //     "position": "fixed",
+        //     "bottom": "0"
 
-        });
+        // });
         setTimeout(function() {
             if($(".collapse").hasClass("show")){
                 console.log("object");
@@ -17,6 +17,6 @@ $(document).ready(function(){
             }
         }, 500);
         
-       
     });
+    $("")
 });

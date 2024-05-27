@@ -71,3 +71,9 @@
    width: 50%;
    height: 50%;
 }
+.card_out{
+    transform: scale(1);
+}
+.card_in{
+    transform: scale(1.5);
+}
