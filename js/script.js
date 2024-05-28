@@ -17,13 +17,13 @@ $(document).ready(function(){
     //     }, 500);
     // });
 
-    $('.card_out').on('click touchstart', function () {
+    $('.card_out').on('click touch', function () { //probar mañana solo con touch
         var tabla = $("#info1");
         if ($("#info1").is(':visible')) {
-            console.log("puta mierda");
+            console.log("entra");
             tabla.hide()
         } else {
             $(tabla).show();
         } 
-    })
+    });
 });
